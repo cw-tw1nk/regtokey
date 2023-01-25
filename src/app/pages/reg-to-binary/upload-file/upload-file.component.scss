@@ -1,0 +1,18 @@
+.dnd {
+  display: flex;
+  cursor: pointer;
+}
+
+.dnd-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

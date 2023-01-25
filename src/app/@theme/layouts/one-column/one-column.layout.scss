@@ -1,0 +1,24 @@
+@import '../../styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  .menu-sidebar ::ng-deep .scrollable {
+    padding-top: nb-theme(layout-padding-top);
+  }
+}
+
+:host .gw-container{
+  max-width: 900px;
+  margin: 30px auto auto;
+}
+@media (max-width: 920px) {
+  :host .gw-container{
+    max-width: 500px;
+  }
+}
+@media (max-width: 520px) {
+  :host .gw-container{
+    max-width: 320px;
+  }
+}

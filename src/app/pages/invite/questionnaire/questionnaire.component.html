@@ -1,0 +1,5 @@
+<h2>{{questionnaire?.title}}</h2>
+<markdown style='width: 100%' katex [data]='questionnaire?.description ?? "Test"'></markdown>
+<p *ngIf='questionnaire?.limit'>Ограничение по времени: {{duration}}</p>
+
+<a nbButton fullWidth status='info' (click)='onStart.next()'>Start</a>

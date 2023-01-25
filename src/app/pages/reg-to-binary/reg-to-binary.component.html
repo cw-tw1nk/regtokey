@@ -1,0 +1,8 @@
+<div>
+  <h2>Convert .reg to Binary</h2>
+
+  <div style='position: relative; height: 56px; margin-bottom: 10px; max-width: 900px'><nb-alert style='position: absolute; width: 100%' status="danger" *ngIf='this.error.length > 0' closable (close)='alertError()'>{{error}}</nb-alert></div>
+  <ngx-upload-file (onChange)='changeText($event)'></ngx-upload-file>
+  <textarea disabled style='height: 30vh; margin-bottom: 10px' nbInput fullWidth placeholder="todo" [(ngModel)]="text"></textarea>
+  <a nbButton fullWidth status='info' (click)='convertFile()'>Convert</a>
+</div>

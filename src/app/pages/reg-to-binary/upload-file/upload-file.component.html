@@ -1,0 +1,21 @@
+<!--<nb-form-field>-->
+<!--  <nb-icon nbPrefix icon="at-outline" pack="eva"></nb-icon>-->
+<!--  -->
+<!--</nb-form-field>-->
+<nb-card (click)='fileUploadInput.click()' ngxDragDropFileUpload (fileDropped)="drop($event)" class='dnd'>
+  <nb-card-body>
+    <div class='flex-center'>
+      <nb-icon icon="upload-outline" style='font-size: 40px'></nb-icon>
+      <div style='font-size: 20px; margin-bottom: 8px'>Drag and drop</div>
+      <div style='font-size: 18px; margin-bottom: 8px'>or</div>
+      <a style='font-size: 18px' nbButton size="small" hero status="danger" shape="round">Browse for file</a>
+    </div>
+    <input hidden #fileUploadInput type='file' accept='.reg, .txt' (change)="fileChanged($event)">
+  </nb-card-body>
+</nb-card>
+<!--<div (click)='fileUploadInput.click()' ngxDragDropFileUpload (fileDropped)="drop($event)" class='dnd dnd-content'>-->
+<!--  <div>Drag and drop</div>-->
+<!--  <div>or</div>-->
+<!--  <div>Browse for file</div>-->
+<!--  <input hidden #fileUploadInput type='file' accept='.reg, .txt' (change)="fileChanged($event)">-->
+<!--</div>-->
